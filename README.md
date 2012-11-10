@@ -1,5 +1,6 @@
 # GraphView, installation
-
+-----------------------
+-----------------------
 
 
 ## Step 1: Import
@@ -39,6 +40,9 @@
 
 
 # Use of the source-library
+-----------------------
+-----------------------
+
 
 - The NS(Mutable)Array must only include values of number-types at  a scale from 0.0 to 1.0. 
 -- Example: 0.50 is in the middle of the graph, 0.90 is almost at the top, 0.10 at the bottom.
