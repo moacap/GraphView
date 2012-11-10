@@ -19,18 +19,22 @@
 
 ## Step 3: Set some properties
 
-- [_graphView setDefaultColor:[UIColor whiteColor]]; (Optional, default is black).
-> Color of the graph (Lines and numbers).
+- [_graphView setDefaultColor:[UIColor whiteColor]]; 
+> (Optional, default is black).
+>> Color of the graph (Lines and numbers).
 
-- [_graphView setDefaultArray:_array]; (Required, GraphView will not work if else).
-> Array for the graph.
+- [_graphView setDefaultArray:_array];
+> (Required, GraphView will not work if else).
+>> Array for the graph.
 
-- [_graphView setDefaultGradientBool:YES]; (Optional, default is NO).
-> Determines if the graph should be filled with gradient.
-> You can set your own gradient (Default is gray), in GraphView.h. It´s defined as GRADIENT_FILL, the first four numbers is color one, the others is color two (RGBA numbers).
+- [_graphView setDefaultGradientBool:YES];
+> (Optional, default is NO).
+>> Determines if the graph should be filled with gradient.
+>> You can set your own gradient (Default is gray), in GraphView.h. It´s defined as GRADIENT_FILL, the first four numbers is color one, the others is color two (RGBA numbers).
 
-- [_graphView setDefaultDashWidth:2.0f]; (Optional, default is 2.0f).
-> Line dash for the lines in the graph. Set this to 0.0f for clean lines.
+- [_graphView setDefaultDashWidth:2.0f];
+> (Optional, default is 2.0f).
+>> Line dash for the lines in the graph. Set this to 0.0f for clean lines.
 
 
 ## Step 4: Add the GraphView as subview of your main view
@@ -55,18 +59,26 @@
 ## Other properties you can customize (Found in the header of GraphView)
 
 - define GRAPH_HEIGHT self.frame.size.height.
+
 - define GRAPH_WIDTH self.frame.size.width.
+
 - define OFFSET_X 10.0f.
 > Offset x, set this to higher if you want more space at the side.
+
 - define OFFSET_Y 10.0f.
 > Offset y, set this to higher if you want more space at the bottom.
+
 - define STEP_X 20.0f.
->> Width of cells.
+> Width of cells.
+
 - define STEP_Y 20.0f.
->> Height of cells.
+> Height of cells.
+
 - define GRAPH_TOP 0.0f.
+
 - define CIRCLE_RADIUS 1.5f.
 > Radius of dots on the graph.
+
 - define GRADIENT_FILL {0.12f, 0.12f, 0.12f, 0.9f, 0.12f, 0.12f, 0.12f, 1.0f};.
 > Set Gradient of choice!
 
