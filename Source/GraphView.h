@@ -11,7 +11,7 @@
 #define GRAPH_WIDTH self.frame.size.width
 #define OFFSET_X 10.0f // Offset x, set this to higher if you want more space at the side.
 #define OFFSET_Y 10.0f // Offset y, set this to higher if you want more space at the bottom.
-#define STEP_X 20.0f // Width of cells.
+#define STEP_X 30.0f // Width of cells.
 #define STEP_Y 20.0f // Height of cells.
 #define GRAPH_TOP 0.0f 
 #define CIRCLE_RADIUS 1.5f // Radius og dots on the graph.

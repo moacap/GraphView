@@ -78,19 +78,19 @@
     for (int i = 0; i < _privateArray.count; i++) {
         
         float difference;
-        
-        if (i < 9) difference = 5.0f;
-        else if (i > 9) difference = 8.0f;
+                
+        if (i < 9) difference = 5.0f;            
+        else if (i > 9 && i < 98) difference = 8.0f;
         else if (i == 9) difference = 9.0f;
         else if (i == 99) difference = 12.0f;
-        else if (i > 99) difference = 11.0f;
-        
+        else if (i > 99 && i < 998) difference = 12.0f;
+
         NSString *text = [NSString stringWithFormat:@"%i.", i + 1];
         CGSize labelSize = [text sizeWithFont:[UIFont fontWithName:@"AmericanTypewriter-Light" size:11.0f]];
         CGContextShowTextAtPoint(context, OFFSET_X - difference + i * STEP_X - labelSize.width/2, GRAPH_HEIGHT - 1.0f, [text cStringUsingEncoding:NSUTF8StringEncoding], text.length);
+        
         }
     }
-    
 }
 
 - (void)drawLineGraphWithContext:(CGContextRef)context
