@@ -68,7 +68,7 @@
 - define OFFSET_Y 10.0f.
 > Offset y, set this to higher if you want more space at the bottom.
 
-- define STEP_X 20.0f.
+- define STEP_X 30.0f.
 > Width of cells.
 
 - define STEP_Y 20.0f.
